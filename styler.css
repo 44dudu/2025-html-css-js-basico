@@ -1,0 +1,83 @@
+:root {
+    --cor-primaria: #0044cc;
+    --cor-secundaria: #002266;
+    --cor-fundo: #818181;
+    --cor-texto: #000000;
+    /* Espaçamentos */
+    --espaco-xxs: 4px;
+    --espaco-xs: 8px;
+    --espaco-sm: 12px;
+    --espaco-md: 16px;
+    --espaco-lg: 24px;
+    --espaco-xl: 32px;
+    --espaco-xxl: 48px;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+}
+
+.container {
+
+    max-width: 70%;
+    margin: 0 auto;
+    padding: var(--espaco-lg);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    padding: var(--espaco-lg);
+    /* alinhamento do texto */
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* menu de navegação */
+nav {
+    background-color: var(--cor-secundaria);
+    padding: var(--espaco-sm);
+    text-align: center;
+}
+
+/* muda apenas os link do menu */
+nav a {
+    color: white;
+    /* remove o traço embaixo do link */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* configurar o hover do link */
+nav a:hover {
+    background-color: var(--cor-primaria);
+    /* borda */
+    border-radius: 20px;
+}
+
+/* configurar o mein */
+main {
+    padding: var(--espaco-lg);
+    text-align: center;
+}
+
+/* rodape */
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: var(--espaco-sm);
+    position: fixed;
+    /* fixar no final da pagina */
+    bottom: 0;
+    width: 100%;
+
+}
